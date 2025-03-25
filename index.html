@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PipeAI - Pipe Leakage & Rust Detection</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>About Pipe AI</h2>
+      <p>
+        Pipe AI analyzes pipe images to classify leaks and rust, providing detailed analysis for industries, municipalities, and maintenance teams.
+      </p>
+
+      <h3>Chat Controls</h3>
+      <button>➕ New Chat</button>
+      <button>☰ Clear All</button>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Pipe AI</h1>
+        <p>Advanced Pipe Analysis System</p>
+      </header>
+
+      <section class="upload-box">
+        <h2>📤 Upload Pipe Image</h2>
+        <label for="pipe-upload">+ Click to Upload Pipe Image</label>
+        <input type="file" id="pipe-upload" accept="image/*" />
+      </section>
+
+      <section class="info">
+        <p>Upload a pipe image to get an AI-powered analysis of potential leaks and rust.</p>
+        <ul>
+          <li><strong>Leak (HIGH RISK)</strong> – <span class="red">Detected</span></li>
+          <li><strong>Rust (MODERATE RISK)</strong> – <span class="orange">Detected</span></li>
+          <li><strong>Normal (LOW RISK)</strong> – <span class="green">Not Detected</span></li>
+        </ul>
+      </section>
+
+      <div class="chatbox">
+        <input type="text" placeholder="Ask a question..." />
+        <button>&#10148;</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
